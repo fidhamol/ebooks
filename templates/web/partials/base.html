@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Ereaders Home Page</title>
+
+    <!-- Css Files -->
+    <link href="{% static 'web/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/flaticon.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/slick-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/fancybox.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/color.css' %}" rel="stylesheet">
+    <link href="{% static 'web/css/responsive.css' %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	 <![endif]-->
+</head>
+
+<body>
+
+    {% include 'web/partials/header.html' %}
+    {% block content %}
+    {% endblock content %}
+    {% include 'web/partials/footer.html' %}
+    <!--// Main Wrapper \\-->
+
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script type="text/javascript" src="{% static 'web/script/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/jquery-ui.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/slick.slider.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/fancybox.pack.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/isotope.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/progressbar.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/jquery.countdown.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/circle-chart.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/script/numscroller.js' %}"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs_m2ywm-bE8z9YM_WmtPaIQNIosN4Dxo&amp;callback=initMap"></script>
+    <script type="text/javascript" src="{% static 'web/script/functions.js' %}"></script>
+
+</body>
+
+</html>
